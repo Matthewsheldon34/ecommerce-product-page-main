@@ -197,7 +197,7 @@ const [menuOpen, setMenuOpen] = useState(false);
 
 <div className=' max-w-5xl  mx-auto  flex flex-col lg:flex-row items-start px-2  py-2 gap-10'>
     
-<div className="w-95 lg:w-1/2 flex gap-5 flex-col max-w-5xl  mx-auto">
+<div className="w-94 lg:w-1/2 flex gap-5 flex-col max-w-5xl  mx-auto">
 
   {/* IMAGE + ARROWS CONTAINER */}
   <div className=" relative  lg:flex-col flex justify-center " >
