@@ -197,23 +197,23 @@ const [menuOpen, setMenuOpen] = useState(false);
 
 <div className=' max-w-5xl  mx-auto  flex flex-col lg:flex-row items-start px-2  py-2 gap-10'>
     
-<div className=" lg:w-1/2 flex gap-5 flex-col max-w-5xl  mx-auto">
+<div className="w-95 lg:w-1/2 flex gap-5 flex-col max-w-5xl  mx-auto">
 
   {/* IMAGE + ARROWS CONTAINER */}
-  <div className=" w-lg  relative flex justify-center  " >
+  <div className=" relative  lg:flex-col flex justify-center " >
 
     <img
    
       src={images[activeIndex].full}
       alt="product"
-      className=" w-auto lg:w-80 rounded-md cursor-pointer lg:rounded-2xl mx-auto  "
+      className="w-100 lg:w-80 rounded-md cursor-pointer lg:rounded-2xl mx-auto  "
       onClick={() => setIsOpen(true)}
     />
 
     {/* LEFT ARROW (mobile only) */}
     <button
       onClick={prev}
-      className="absolute left-16 top-1/2 -translate-y-1/2 bg-white rounded-full p-2  cursor-pointer lg:hidden active:scale-90 hover:scale-110"
+      className="absolute left-5 top-1/2 -translate-y-1/2 bg-white rounded-full p-2  cursor-pointer lg:hidden active:scale-90 hover:scale-110"
     >
       <img
          className="w-4 h-4 fill-black group-hover:fill-[hsl(26,100%,55%)] transition "
@@ -229,7 +229,7 @@ const [menuOpen, setMenuOpen] = useState(false);
     {/* RIGHT ARROW (mobile only) */}
     <button
       onClick={next}
-      className="absolute right-16 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 cursor-pointer lg:hidden active:scale-90 hover:scale-"
+      className="absolute right-5 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 cursor-pointer lg:hidden active:scale-90 hover:scale-"
     
     >
       <img src={IconNext} alt="" className="w-4 h-4" />
@@ -238,7 +238,7 @@ const [menuOpen, setMenuOpen] = useState(false);
   </div>
 
   {/* THUMBNAILS */}
-  <div className="hidden lg:flex  p-2 justify-center gap-5 ">
+  <div className="hidden lg:flex  p-2 justify-center gap-5">
     {images.map((img, index) => (
       <div
         key={index}
@@ -259,7 +259,7 @@ const [menuOpen, setMenuOpen] = useState(false);
         <img
           src={img.thumb}
           alt=""
-          className=" w-full h-full object-cover rounded-md"
+          className="relative  w-full h-full object-cover rounded-md"
         />
       </div>
     ))}
